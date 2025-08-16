@@ -1,4 +1,5 @@
 {
+  "name": "My workflow 14",
   "nodes": [
     {
       "parameters": {
@@ -61,10 +62,10 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.2,
       "position": [
-        620,
-        560
+        -128,
+        48
       ],
-      "id": "16f78d6a-c3fb-46ba-ace4-912789869289",
+      "id": "e11788bb-ef66-445f-8e14-637c8a7f3674",
       "name": "Tipo de mensagem"
     },
     {
@@ -78,10 +79,10 @@
       "type": "@n8n/n8n-nodes-langchain.openAi",
       "typeVersion": 1.8,
       "position": [
-        1140,
-        440
+        400,
+        -80
       ],
-      "id": "4ae5d912-e7d7-4290-8c87-9575d29b982c",
+      "id": "335fdc6c-5b37-4fca-8db9-096edea77977",
       "name": "Transcrever áudio"
     },
     {
@@ -101,10 +102,10 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        920,
-        660
+        176,
+        160
       ],
-      "id": "11836bb7-497c-4676-ac67-d11b8f33f87b",
+      "id": "ac8320d0-a8a3-4664-abde-dc9a47e5551e",
       "name": "Set mensagem texto"
     },
     {
@@ -124,10 +125,10 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        1360,
-        440
+        624,
+        -80
       ],
-      "id": "3b9546c7-d61c-43d0-a6de-736b36d0937c",
+      "id": "c96e00be-ecef-4f5c-a609-f3bb075eec1b",
       "name": "Set mensagem áudio"
     },
     {
@@ -140,72 +141,25 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -60,
-        380
+        -816,
+        -128
       ],
-      "id": "4573ff2e-37c1-4763-86a4-6a89b27f50cf",
+      "id": "738d31d0-1c68-41fc-8dbc-503269c4e5e1",
       "name": "Sticky Note5"
     },
     {
       "parameters": {
-        "content": "[![fazer.ai](https://framerusercontent.com/images/HqY9djLTzyutSKnuLLqBr92KbM.png?scale-down-to=256)](https://fazer.ai?utm_source=n8n&utm_campaign=sec-ep2&utm_medium=evo-5)\n\n## Esse é um template faça você mesmo do canal\n## Lucas Moreira\n\n### Inscreva-se no nosso canal no YouTube\n[![YouTube Lucas Moreira](https://img.shields.io/youtube/channel/subscribers/UCtmp6SxzLscu0GRTbgM8FTw?style=flat-square&logo=youtube&label=Inscreva-se&color=f00)](https://youtube.com/@eulucassmoreira?si=0lH7hwX9pukjhmPQ)\n\n### Siga nosso GitHub\n[![GitHub fazer.ai](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white&label)](https://github.com/fazer-ai)\n",
-        "height": 440,
-        "width": 550,
-        "color": 7
-      },
-      "type": "n8n-nodes-base.stickyNote",
-      "typeVersion": 1,
-      "position": [
-        -60,
-        -80
-      ],
-      "id": "e0b60c79-4de7-491e-9021-99f26970dc4e",
-      "name": "Sticky Note11"
-    },
-    {
-      "parameters": {
-        "content": "## Quer entender como funciona?\n\n\n### Assista o vídeo, deixe um like, e se inscreva no canal para ter acesso a mais workflows como esse!\n\n[![IMAGE ALT TEXT HERE](https://i1.ytimg.com/vi_webp/cvTWGNJGAu4/maxresdefault.webp)](https://www.youtube.com/watch?v=cvTWGNJGAu4)",
-        "height": 440,
-        "width": 500,
-        "color": 7
-      },
-      "type": "n8n-nodes-base.stickyNote",
-      "typeVersion": 1,
-      "position": [
-        500,
-        -80
-      ],
-      "id": "d77cfeda-461b-4c75-83c1-236e99bdd69f",
-      "name": "Sticky Note15"
-    },
-    {
-      "parameters": {
-        "content": "![Evolution API](https://mintlify.s3.us-west-1.amazonaws.com/evolution/logo/dark.svg)",
-        "height": 100,
-        "width": 280,
-        "color": 7
-      },
-      "type": "n8n-nodes-base.stickyNote",
-      "typeVersion": 1,
-      "position": [
-        160,
-        220
-      ],
-      "id": "6df7840a-5697-4ad0-9e53-1a22284e2690",
-      "name": "Sticky Note20"
-    },
-    {
-      "parameters": {
         "resource": "file",
-        "fileId": "={{ $('Receber Mensagem Telegram').item.json.message.voice.file_id }}"
+        "fileId": "={{ $('Receber Mensagem Telegram').item.json.message.voice.file_id }}",
+        "additionalFields": {}
       },
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        920,
-        440
+        176,
+        -80
       ],
-      "id": "ebb2479c-f68b-4514-8672-3dcc378e6da5",
+      "id": "00d9820b-9550-49b8-85eb-41ad9638355a",
       "name": "Download áudio",
       "webhookId": "9b28d599-c57f-4ecf-94a1-6334f7dabf6d"
     },
@@ -219,10 +173,10 @@
       "type": "n8n-nodes-base.telegramTrigger",
       "typeVersion": 1.2,
       "position": [
-        140,
-        560
+        -608,
+        48
       ],
-      "id": "0ecb6752-e5ea-4627-90c4-d10d82cec425",
+      "id": "218fca03-94e3-4faa-8d25-76ed2c8623f5",
       "name": "Receber Mensagem Telegram",
       "webhookId": "f2b29356-d5d3-4f5d-9ef1-273001c0a820"
     },
@@ -255,10 +209,10 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        400,
-        560
+        -352,
+        48
       ],
-      "id": "d8a68dca-b759-4fe6-bea5-9bb75c618c31",
+      "id": "3752c12c-03bd-4e95-a3f3-5d7bf8b095d2",
       "name": "Info"
     },
     {
@@ -272,10 +226,10 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.8,
       "position": [
-        1640,
-        560
+        896,
+        48
       ],
-      "id": "2c5262e7-39fa-430c-b52c-a295776194e1",
+      "id": "a14836ae-3fd9-4a46-bb65-4b05af888a35",
       "name": "Assistente do escritório interno"
     },
     {
@@ -287,10 +241,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        2000,
-        560
+        1264,
+        48
       ],
-      "id": "8bbe8004-828a-45d3-97ac-b5d4c7750da4",
+      "id": "00bdefd2-14e5-4e2a-a5e1-aa19581b2886",
       "name": "Responder Telegram",
       "webhookId": "21855174-4f7f-49f5-b8f4-a284d6ee4ddf"
     },
@@ -302,10 +256,10 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        1120,
-        800
+        384,
+        288
       ],
-      "id": "2fcf0eee-88df-4854-b146-c7764df02898",
+      "id": "55d9b499-64a2-4118-a6b6-762b3eba1238",
       "name": "Google Gemini Chat Model"
     },
     {
@@ -318,10 +272,10 @@
       "type": "@n8n/n8n-nodes-langchain.memoryPostgresChat",
       "typeVersion": 1.3,
       "position": [
-        1260,
-        800
+        512,
+        288
       ],
-      "id": "0fb3c154-7a33-451e-87b9-6cb2c9f7ee0f",
+      "id": "7a6a2092-5c24-48ea-8f8a-1f604a6285b5",
       "name": "Postgres Chat Memory"
     },
     {
@@ -395,10 +349,10 @@
       "type": "n8n-nodes-base.postgresTool",
       "typeVersion": 2.6,
       "position": [
-        1400,
-        800
+        656,
+        288
       ],
-      "id": "5b78db4e-c379-45db-8980-f5e76bc4a384",
+      "id": "b846e84e-c23b-43ea-b6f6-f8d6f1b71e09",
       "name": "Salvar memoria"
     },
     {
@@ -408,10 +362,10 @@
       "type": "@n8n/n8n-nodes-langchain.mcpClientTool",
       "typeVersion": 1,
       "position": [
-        1520,
-        800
+        784,
+        288
       ],
-      "id": "ae8dd65a-80c9-452a-a8b1-0630e6139346",
+      "id": "22a29c80-af43-47c3-a6b3-709efdcd3da4",
       "name": "MCP Google Calendar"
     },
     {
@@ -427,10 +381,10 @@
       "type": "n8n-nodes-base.googleTasksTool",
       "typeVersion": 1,
       "position": [
-        1800,
-        800
+        1056,
+        288
       ],
-      "id": "c851c870-7caf-4095-b3ec-d31668328653",
+      "id": "e9e6e6e7-9934-4751-b177-e048c47f4714",
       "name": "Criar tarefa"
     },
     {
@@ -442,10 +396,10 @@
       "type": "n8n-nodes-base.gmailTool",
       "typeVersion": 2.1,
       "position": [
-        1940,
-        800
+        1200,
+        288
       ],
-      "id": "8822cbb3-a784-471d-a741-eb88fc57d957",
+      "id": "7de9d3e0-439b-41ac-b7b8-8242ab75613a",
       "name": "Ler emails",
       "webhookId": "dde17a90-60a1-42ad-9a09-06cf2fbb3105"
     },
@@ -454,10 +408,10 @@
       "type": "@n8n/n8n-nodes-langchain.toolThink",
       "typeVersion": 1,
       "position": [
-        2080,
-        800
+        1344,
+        288
       ],
-      "id": "ac19bcd0-3571-46a4-ba9b-0fee15be5190",
+      "id": "89a26bb8-18b7-4caf-b6d5-e1223b469b4f",
       "name": "Refletir"
     },
     {
@@ -474,35 +428,14 @@
       "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
       "typeVersion": 1.1,
       "position": [
-        1660,
-        800
+        912,
+        288
       ],
-      "id": "90b02206-7994-4fc4-92cf-5e4fd2accc19",
-      "name": "Enviar reagendamento",
-      "credentials": {
-        "evolutionApi": {
-          "id": "xSrpcD3N3rq3wRPD",
-          "name": "Evolution account"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "content": "## [Clique aqui e entre agora para tirar suas dúvidas](https://lucasmoreira.fazer.ai)\n[![Banner comunidade](https://framerusercontent.com/images/KIXMxk9eKCoCsNeVm1oaz5HnaQ.png)](https://lucasmoreira.fazer.ai)",
-        "height": 440,
-        "width": 1380,
-        "color": 5
-      },
-      "type": "n8n-nodes-base.stickyNote",
-      "typeVersion": 1,
-      "position": [
-        1020,
-        -80
-      ],
-      "id": "de413b9c-5953-4183-83dc-16e9d3dbd3ae",
-      "name": "Sticky Note36"
+      "id": "b732ce4a-4a48-42f7-a38a-f1d0d653bffd",
+      "name": "Enviar reagendamento"
     }
   ],
+  "pinData": {},
   "connections": {
     "Tipo de mensagem": {
       "main": [
@@ -687,5 +620,15 @@
         ]
       ]
     }
-  }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "14381bdb543a3065b8156f71f9b7fcd525907dd6f5ee6cfd7174fde388c12b97"
+  },
+  "tags": []
 }

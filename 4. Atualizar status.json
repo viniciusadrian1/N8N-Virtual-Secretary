@@ -1,4 +1,5 @@
 {
+  "name": "My workflow 14",
   "nodes": [
     {
       "parameters": {
@@ -9,60 +10,12 @@
       "type": "n8n-nodes-base.webhook",
       "typeVersion": 2,
       "position": [
-        -60,
-        0
+        -496,
+        288
       ],
-      "id": "7be3b5c6-c04f-4aee-a273-81c3edf27985",
+      "id": "7b52b5ca-c5bd-45ae-8dba-0170527db488",
       "name": " Webhook Digitando...",
       "webhookId": "e56e25c6-d00e-40aa-83b6-4985aea910f1"
-    },
-    {
-      "parameters": {
-        "content": "[![fazer.ai](https://framerusercontent.com/images/HqY9djLTzyutSKnuLLqBr92KbM.png?scale-down-to=256)](https://fazer.ai?utm_source=n8n&utm_campaign=sec-ep2&utm_medium=evo-4)\n\n## Esse é um template faça você mesmo do canal\n## Lucas Moreira\n\n### Inscreva-se no nosso canal no YouTube\n[![YouTube Lucas Moreira](https://img.shields.io/youtube/channel/subscribers/UCtmp6SxzLscu0GRTbgM8FTw?style=flat-square&logo=youtube&label=Inscreva-se&color=f00)](https://youtube.com/@eulucassmoreira?si=0lH7hwX9pukjhmPQ)\n\n### Siga nosso GitHub\n[![GitHub fazer.ai](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white&label)](https://github.com/fazer-ai)\n",
-        "height": 440,
-        "width": 550,
-        "color": 7
-      },
-      "type": "n8n-nodes-base.stickyNote",
-      "typeVersion": 1,
-      "position": [
-        -380,
-        -520
-      ],
-      "id": "49077a75-7f43-4f9c-af1f-5916036f8f20",
-      "name": "Sticky Note10"
-    },
-    {
-      "parameters": {
-        "content": "## Quer entender como funciona?\n\n\n### Assista o vídeo, deixe um like, e se inscreva no canal para ter acesso a mais workflows como esse!\n\n[![IMAGE ALT TEXT HERE](https://i1.ytimg.com/vi_webp/cvTWGNJGAu4/maxresdefault.webp)](https://www.youtube.com/watch?v=cvTWGNJGAu4)",
-        "height": 440,
-        "width": 500,
-        "color": 7
-      },
-      "type": "n8n-nodes-base.stickyNote",
-      "typeVersion": 1,
-      "position": [
-        180,
-        -520
-      ],
-      "id": "62e9e4bc-6fd2-4b03-8636-f9983cc2b554",
-      "name": "Sticky Note13"
-    },
-    {
-      "parameters": {
-        "content": "![Evolution API](https://mintlify.s3.us-west-1.amazonaws.com/evolution/logo/dark.svg)",
-        "height": 100,
-        "width": 280,
-        "color": 7
-      },
-      "type": "n8n-nodes-base.stickyNote",
-      "typeVersion": 1,
-      "position": [
-        -160,
-        -220
-      ],
-      "id": "f5062013-a868-494d-ab88-e236a52b388c",
-      "name": "Sticky Note20"
     },
     {
       "parameters": {
@@ -92,14 +45,14 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        180,
-        0
+        -256,
+        288
       ],
-      "id": "97459f97-1848-4b52-962c-ef84f87d0673",
-      "name": "Atualizar status",
-      "credentials": {}
+      "id": "2b9e8954-0941-48c6-920b-c90bacc10187",
+      "name": "Atualizar status"
     }
   ],
+  "pinData": {},
   "connections": {
     " Webhook Digitando...": {
       "main": [
@@ -113,6 +66,14 @@
       ]
     }
   },
-  "pinData": {},
-  "meta": {}
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "14381bdb543a3065b8156f71f9b7fcd525907dd6f5ee6cfd7174fde388c12b97"
+  },
+  "tags": []
 }
